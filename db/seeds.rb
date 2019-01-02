@@ -17,3 +17,10 @@ maine_waves = Sound.create({
   description: 'Waves periodically washing over rocks',
   soundscape: beach_test
   })
+
+water_flowing = Sound.create({
+  name: 'Stream',
+  source: '../app/assets/sounds/water_flowing.wav',
+  description: 'Waves periodically washing over rocks',
+  soundscape: beach_test
+  })
