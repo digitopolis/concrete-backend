@@ -11,16 +11,16 @@ beach_test = Soundscape.create({
   theme: 'Abstract'
   })
 
-maine_waves = Sound.create({
-  name: 'Waves',
-  source: '../app/assets/sounds/maine_beach.m4a',
-  description: 'Waves periodically washing over rocks',
-  soundscape: beach_test
+industrial = Soundscape.create({
+  name: 'Industrial Noise',
+  theme: 'Mechanical'
   })
 
-water_flowing = Sound.create({
-  name: 'Stream',
-  source: '../app/assets/sounds/water_flowing.wav',
-  description: 'Waves periodically washing over rocks',
-  soundscape: beach_test
-  })
+Sound.create([
+  { name: 'Waves', source: 'maine_beach.m4a', description: 'Waves periodically washing over rocks', soundscape: beach_test },
+  { name: 'Stream', source: 'water_flowing.wav', description: 'Water flowing in stream', soundscape: beach_test },
+  { name: 'Steamboat', source: 'steamboat.wav', description: 'Steamboat horn', soundscape: beach_test},
+  { name: 'Bodyscanner', source: 'mri_bodyscan.wav', description: 'MRI Bodyscanner', soundscape: industrial},
+  { name: 'Girders', source: 'metal_clangs.wav', description: 'Girders clanging', soundscape: industrial},
+  { name: 'Presser', source: 'trouser_press.wav', description: 'Trouser press operating', soundscape: industrial}
+  ])
