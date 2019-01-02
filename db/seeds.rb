@@ -5,3 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+beach_test = Soundscape.create({
+  name: 'Beach Sounds',
+  theme: 'Abstract'
+  })
+
+maine_waves = Sound.create({
+  name: 'Waves',
+  source: '../app/assets/sounds/maine_beach.m4a',
+  description: 'Waves periodically washing over rocks',
+  soundscape: beach_test
+  })
